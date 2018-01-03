@@ -17,7 +17,7 @@ class DroneMapContainer extends React.Component {
 
   componentWillMount() {
       axios
-      .get("http://localhost:8080")
+      .get("https://kjb-drone-server.herokuapp.com/")
       .then(response => {
         this.setState({
           strikeData: response.data
